@@ -24,7 +24,7 @@
     z-index:9999;
   }
 
-  /* LANGUAGE TOGGLE */
+  /* toggle english or romanian */
   .lang-btn{
     position:fixed;top:16px;right:16px;z-index:10000;
     background:#0d1a0d;border:2px solid var(--green);
@@ -37,7 +37,7 @@
 
   .wrap{max-width:880px;margin:0 auto;padding:1.5rem 1rem 3rem}
 
-  /* HEADER */
+  /* header stuff */
   .header{
     border:1px solid var(--green);padding:2rem 1.5rem;
     margin-bottom:1.5rem;position:relative;text-align:center;
@@ -57,7 +57,7 @@
   .c-bl{bottom:-1px;left:-1px;border-bottom:2px solid var(--amber);border-left:2px solid var(--amber)}
   .c-br{bottom:-1px;right:-1px;border-bottom:2px solid var(--amber);border-right:2px solid var(--amber)}
 
-  /* TICKER */
+  /* ticker thing */
   .ticker{
     font-size:0.72rem;color:var(--muted);border:1px solid var(--border);
     padding:0.35rem 0;margin-bottom:1.5rem;overflow:hidden;white-space:nowrap;
@@ -65,7 +65,7 @@
   .ticker-inner{display:inline-block;animation:scroll 28s linear infinite}
   @keyframes scroll{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
 
-  /* STATUS BAR */
+  /* the main status bar */
   .status-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.75rem;margin-bottom:1.5rem}
   .status-item{border:1px solid var(--border);padding:0.65rem 0.85rem}
   .status-label{font-size:0.65rem;color:var(--muted);letter-spacing:0.15em;margin-bottom:0.25rem}
@@ -73,11 +73,11 @@
   .led{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);animation:blink 2s infinite;margin-right:6px}
   @keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
 
-  /* GRID */
+  /* main grid */
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
   @media(max-width:600px){.grid2{grid-template-columns:1fr}}
 
-  /* PANELS */
+  /* the panels */
   .panel{border:1px solid var(--border);padding:1rem;margin-bottom:1rem}
   .panel-title{font-size:0.68rem;color:var(--amber);letter-spacing:0.2em;border-bottom:1px solid var(--border);padding-bottom:0.5rem;margin-bottom:0.75rem}
   .bio-text{font-size:0.83rem;line-height:1.75;color:var(--text)}
@@ -89,7 +89,7 @@
   .badge{font-size:0.7rem;border:1px solid var(--green);color:var(--green);padding:2px 8px;letter-spacing:0.1em}
   .badge.amber{border-color:var(--amber);color:var(--amber)}
 
-  /* SSTV */
+  /* SSTV images */
   .sstv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.75rem}
   .sstv-placeholder{
     border:1px dashed var(--border);min-height:150px;
@@ -99,7 +99,7 @@
   }
   .sstv-placeholder img{width:100%;height:140px;object-fit:cover;border:1px solid var(--border)}
 
-  /* RX LOG */
+  /* receive logs */
   .rx-table{width:100%;border-collapse:collapse;font-size:0.78rem}
   .rx-table th{color:var(--muted);font-size:0.65rem;letter-spacing:0.12em;text-align:left;padding:0.3rem 0.5rem;border-bottom:1px solid var(--border)}
   .rx-table td{padding:0.35rem 0.5rem;border-bottom:1px solid rgba(42,74,42,0.5);color:var(--text)}
@@ -109,7 +109,7 @@
     .rx-table td,.rx-table th{padding:0.3rem 0.25rem;font-size:0.72rem}
   }
 
-  /* LINKS */
+  /* social links */
   .links-row{display:flex;gap:0.75rem;flex-wrap:wrap}
   .ext-link{
     border:1px solid var(--border);padding:0.5rem 1rem;
@@ -118,10 +118,10 @@
   }
   .ext-link:hover{border-color:var(--amber);color:var(--green);background:rgba(57,255,20,0.05)}
 
-  /* FOOTER */
+  /* footer */
   .footer{text-align:center;font-size:0.7rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;letter-spacing:0.1em;margin-top:1rem}
 
-  /* RESPONSIVE FIXES */
+  /* random fixes */
   @media(max-width:400px){
     .lang-btn{font-size:0.72rem;padding:6px 10px;top:10px;right:10px}
     .wrap{padding:1rem 0.75rem 2rem}
@@ -181,7 +181,7 @@
 
     <div class="panel">
       <div class="panel-title" data-en="// RIG & GEAR" data-ro="// ECHIPAMENT">// RIG &amp; GEAR</div>
-      <div class="gear-row"><span class="gear-key">TRANSCEIVER</span><span class="gear-val">YAESU FT-7900R</span></div>
+      <div class="gear-row"><span class="gear-key">TRANSCEIVER</span><span class="gear-val">Radtel RT-890</span></div>
       <div class="gear-row"><span class="gear-key">ANTENNA 2m</span><span class="gear-val">2m Yagi</span></div>
       <div class="gear-row"><span class="gear-key">ANTENNA 70cm</span><span class="gear-val">Nagoya NA-771</span></div>
       <div class="gear-row"><span class="gear-key" data-en="POWER" data-ro="PUTERE">POWER</span><span class="gear-val">25W</span></div>
